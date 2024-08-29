@@ -1,0 +1,70 @@
+/* Reset some basic styles */
+body, h1, p, form {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Ensure the background image covers the entire screen */
+.background-container {
+    background-image: url('background.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style for the title text */
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+/* Style for additional text */
+p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+/* Style for the contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.2em;
+    }
+}
